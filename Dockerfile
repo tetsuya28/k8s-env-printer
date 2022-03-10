@@ -19,6 +19,4 @@ WORKDIR /
 
 COPY --from=builder /build/main /main
 
-USER nonroot
-
 CMD [ "/main" ]

@@ -13,8 +13,8 @@ func main() {
 	e.HideBanner = true
 	e.HidePort = true
 
-	e.Get("/", listEnvs())
-	e.Get("/:name", listEnvs())
+	e.GET("/", listEnvs())
+	e.GET("/:name", listEnvs())
 
 	port := os.Getenv("PORT")
 	if port == "" {
